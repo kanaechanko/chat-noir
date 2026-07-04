@@ -4,88 +4,105 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>占いサロン Chat Noir</title>
-
 <style>
-body{
-    margin:0;
-    font-family:"Yu Gothic",sans-serif;
-    background:#faf8f6;
-    color:#333;
-    line-height:1.8;
-}
-
-.hero img{
-    width:100%;
-    display:block;
-}
-
-.hero-text{
-    text-align:center;
-    margin-top:-80px;
-    color:white;
-    text-shadow:0 2px 6px rgba(0,0,0,.7);
-}
-
-.hero-text h1{
-    font-size:42px;
-    margin:0;
-}
-
-.hero-text p{
-    font-size:22px;
-}
-
-section{
-    max-width:900px;
-    margin:auto;
-    padding:60px 20px;
-}
-
-h2{
-    text-align:center;
-    font-size:34px;
-}
-
-.button{
-    display:inline-block;
-    background:#6b2fa0;
-    color:white;
-    padding:15px 35px;
-    text-decoration:none;
-    border-radius:30px;
-    font-size:20px;
-}
+body{margin:0;font-family:"Yu Mincho","Hiragino Mincho ProN",serif;background:#faf7f0;color:#333;line-height:1.9}
+.hero{position:relative;text-align:center;background:#111}
+.hero img{width:100%;height:90vh;object-fit:cover;opacity:.72}
+.hero-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:white;text-shadow:0 3px 10px #000;width:90%}
+.hero-text h1{font-size:54px;margin:0}
+.hero-text p{font-size:24px}
+section{max-width:900px;margin:auto;padding:70px 24px}
+h2{text-align:center;font-size:36px;color:#7a5a2e;margin-bottom:30px}
+.card{background:white;border-radius:18px;padding:28px;margin:20px 0;box-shadow:0 8px 25px #ddd}
+.price{font-size:26px;color:#9b7438;font-weight:bold}
+.btn{display:inline-block;background:#9b7438;color:white;padding:14px 32px;border-radius:40px;text-decoration:none;margin-top:20px}
+footer{text-align:center;background:#7a5a2e;color:white;padding:40px}
 </style>
 </head>
-
 <body>
 
 <div class="hero">
-<img src="salon.jpg">
+<img src="salon.jpg" alt="占いサロン Chat Noir">
 <div class="hero-text">
 <h1>占いサロン Chat Noir</h1>
 <p>心に寄り添い、未来への一歩を。</p>
+<p>完全予約制・個室占いサロン</p>
 </div>
 </div>
 
 <section>
-<h2>プロフィール</h2>
-
-<h3>Tarotmaster Diane</h3>
-
-<p>
-大阪・上本町のプライベート占いサロン。<br>
-タロット占い・手相占い・マンツーマンタロット講座を行っています。<br><br>
-
-お一人おひとりのお気持ちに寄り添い、
-前向きな一歩を踏み出すお手伝いを大切にしています。
-</p>
-
-<p style="text-align:center;">
-<a class="button" href="#">ご予約はこちら</a>
-</p>
-
+<h2>サロン紹介</h2>
+<p>大阪上本町駅から徒歩1分、地下鉄谷町九丁目駅から徒歩5分の好立地にある、完全予約制の個室占いサロンです。</p>
+<p>恋愛、仕事、人生の選択、お子様の受験など、さまざまなお悩みに寄り添い、タロットと手相を通して前向きな一歩をサポートします。</p>
 </section>
+
+<section>
+<h2>プロフィール</h2>
+<div class="card">
+<h3>Tarotmaster Diane</h3>
+<p>タロット占師として20年の実績。延べ3,000人以上を鑑定。手相占い師として5年の実績があります。</p>
+<p>リピーター様、定期的にご来店されるお客様も多数。お一人おひとりのお気持ちに寄り添う鑑定を大切にしています。</p>
+</div>
+</section>
+
+<section>
+<h2>メニュー・料金</h2>
+<div class="card">
+<h3>開運インスピレーションタロット占い</h3>
+<p class="price">1時間 10,000円（税込）</p>
+</div>
+<div class="card">
+<h3>タロット占い＋開運手相占い</h3>
+<p class="price">1.5時間 15,000円（税込）</p>
+</div>
+<div class="card">
+<h3>延長</h3>
+<p class="price">10分ごと 2,500円（税込）</p>
+</div>
+</section>
+
+<section>
+<h2>マンツーマンタロット占い講座</h2>
+<div class="card">
+<p>随時開催・ご予約受付中です。</p>
+</div>
+</section>
+
+<section>
+<h2>お客様の声</h2>
+<div class="card"><p>サロンができた時から毎月相談に伺っています。先生の鑑定アドバイスで自分の理想に近づいているのを実感しています。</p><p>K.H様</p></div>
+<div class="card"><p>お友達からの紹介で通っています。少し先のことを占ってもらえるので慌てずに済み、とても助かっています。</p><p>I.H様</p></div>
+<div class="card"><p>彼と一緒に相性占いで予約。後押ししていただき、その後結婚しました。</p><p>T.Y様</p></div>
+</section>
+
+<section>
+<h2>よくある質問</h2>
+<div class="card">
+<h3>20分・30分鑑定できますか？</h3>
+<p>個室占いサロンですので1時間から承っております。</p>
+<h3>キャンセル料はかかりますか？</h3>
+<p>現時点ではキャンセル料は頂戴しておりません。ご連絡だけお願いいたします。</p>
+<h3>男性は鑑定できますか？</h3>
+<p>はい。ただし何度かご来店いただいているお客様からのご紹介のみとさせていただいております。</p>
+</div>
+</section>
+
+<section>
+<h2>アクセス</h2>
+<p>〒543-0031<br>大阪市天王寺区石ヶ辻町18-18<br>ウェルネス上本町301</p>
+<p>近鉄「大阪上本町駅」徒歩1分<br>大阪メトロ「谷町九丁目駅」徒歩5分</p>
+</section>
+
+<section style="text-align:center">
+<h2>ご予約・お問い合わせ</h2>
+<p>メールよりお願いいたします。</p>
+<a class="btn" href="mailto:diane.tarotmaster@gmail.com">diane.tarotmaster@gmail.com</a>
+</section>
+
+<footer>
+<p>占いサロン Chat Noir</p>
+<p>心に寄り添い、未来への一歩を。</p>
+</footer>
 
 </body>
 </html>
