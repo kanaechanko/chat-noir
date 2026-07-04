@@ -3,288 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>占いサロン Chat Noir｜大阪上本町</title>
-
+<title>占いサロン Chat Noir｜大阪上本町の個室占いサロン</title>
+<meta name="description" content="大阪上本町駅徒歩1分。占いサロン Chat Noirは、タロット占い・手相占い・マンツーマンタロット講座を行う完全予約制の個室占いサロンです。">
 <style>
-body{
-  margin:0;
-  font-family:"Yu Mincho","Hiragino Mincho ProN",serif;
-  background:#faf7f0;
-  color:#333;
-  line-height:1.9;
-}
-.nav{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  background:rgba(250,247,240,.96);
-  z-index:999;
-  text-align:center;
-  padding:14px 5px;
-  box-shadow:0 2px 10px rgba(0,0,0,.08);
-}
-.nav a{
-  margin:0 14px;
-  color:#7a5a2e;
-  text-decoration:none;
-  font-weight:bold;
-}
-.logo{
-  font-size:22px;
-  margin-right:28px;
-}
-.hero{
-  position:relative;
-  text-align:center;
-  background:#111;
-  margin-top:55px;
-}
-.hero img{
-  width:100%;
-  height:90vh;
-  object-fit:cover;
-  opacity:.72;
-}
-.hero-text{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  color:white;
-  text-shadow:0 3px 10px #000;
-  width:90%;
-}
-.hero-text h1{
-  font-size:58px;
-  margin:0 0 24px;
-}
-.hero-text p{
-  font-size:25px;
-}
-.hero .btn{
-  margin-top:25px;
-}
-section{
-  max-width:900px;
-  margin:auto;
-  padding:80px 24px;
-}
-h2{
-  text-align:center;
-  font-size:38px;
-  color:#7a5a2e;
-  margin-bottom:35px;
-}
-.card{
-  background:white;
-  border-radius:18px;
-  padding:32px;
-  margin:22px 0;
-  box-shadow:0 8px 25px rgba(0,0,0,.08);
-}
-.price{
-  font-size:28px;
-  color:#9b7438;
-  font-weight:bold;
-}
-.btn{
-  display:inline-block;
-  background:#9b7438;
-  color:white;
-  padding:14px 34px;
-  border-radius:40px;
-  text-decoration:none;
-  font-size:18px;
-}
-.btn-mail{
-  background:#9b7438;
-}
-.btn-line{
-  background:#6d8f4e;
-}
-.btn-gray{
-  background:#999;
-}
-.map{
-  width:100%;
-  height:380px;
-  border:0;
-  border-radius:18px;
-  margin-top:25px;
-  box-shadow:0 8px 25px rgba(0,0,0,.08);
-}
-footer{
-  text-align:center;
-  background:#7a5a2e;
-  color:white;
-  padding:55px 20px;
-}
-@media(max-width:700px){
-  .nav{
-    font-size:14px;
-    overflow-x:auto;
-    white-space:nowrap;
-  }
-  .logo{
-    display:block;
-    margin:0 0 5px;
-  }
-  .hero-text h1{
-    font-size:38px;
-  }
-  .hero-text p{
-    font-size:19px;
-  }
-  .hero img{
-    height:78vh;
-  }
-  h2{
-    font-size:30px;
-  }
-}
+:root{--ivory:#fbf7ee;--cream:#fffaf0;--gold:#b1843d;--darkgold:#7a5422;--brown:#3a2a1c;--ink:#2e2923;}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:"Yu Mincho","Hiragino Mincho ProN",serif;background:var(--ivory);color:var(--ink);line-height:1.9}
+a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
+.header{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(255,250,240,.96);box-shadow:0 4px 18px rgba(90,60,20,.10)}
+.logo{text-align:center;padding:14px 10px 4px;font-size:34px;letter-spacing:.04em;color:var(--brown)}
+.logo small{display:block;font-size:13px;letter-spacing:.18em;color:var(--darkgold);margin-top:-8px}
+.logo .mark{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:linear-gradient(145deg,#f7e2aa,#a87824);color:#111;margin-right:8px;font-size:25px}
+.nav{display:flex;justify-content:center;gap:28px;padding:8px 8px 14px;white-space:nowrap}.nav a{color:var(--darkgold);font-weight:bold;font-size:16px}
+.action-bar{position:fixed;top:15px;right:26px;z-index:1001;display:flex;gap:10px}.action-bar a{border:1px solid rgba(177,132,61,.45);background:rgba(255,250,240,.9);color:var(--darkgold);padding:8px 16px;border-radius:999px;font-weight:bold;font-size:14px;box-shadow:0 4px 16px rgba(90,60,20,.12)}
+.hero{margin-top:128px;min-height:82vh;position:relative;display:flex;align-items:center;background:#111;overflow:hidden}.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.72;transform:scale(1.03)}.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 35%,rgba(214,171,82,.22),transparent 28%),linear-gradient(90deg,rgba(0,0,0,.58),rgba(0,0,0,.2),rgba(0,0,0,.45))}
+.hero-content{position:relative;z-index:2;color:white;padding:80px 8vw;max-width:780px;text-shadow:0 3px 12px rgba(0,0,0,.7)}.hero-content .sub{font-size:26px;letter-spacing:.1em}.hero h1{font-size:clamp(56px,8vw,105px);line-height:1;margin:12px 0 28px;font-weight:600}.hero p{font-size:26px;margin:8px 0}.hero-btn{display:inline-flex;align-items:center;gap:12px;margin-top:34px;background:linear-gradient(145deg,#d8af62,#9b6f28);color:white;padding:18px 42px;border-radius:999px;font-size:22px;font-weight:bold;box-shadow:0 12px 30px rgba(0,0,0,.25)}
+.moon-cat{position:absolute;right:8vw;top:24%;z-index:2;width:210px;height:260px;opacity:.92}.crescent{position:absolute;width:190px;height:190px;border-radius:50%;box-shadow:-42px 0 0 0 #d9b15b;transform:rotate(12deg);right:12px;top:0}.cat{position:absolute;right:18px;bottom:0;width:80px;height:130px;background:#080706;border-radius:45% 45% 35% 35%}.cat:before,.cat:after{content:"";position:absolute;top:-18px;width:0;height:0;border-left:14px solid transparent;border-right:14px solid transparent;border-bottom:28px solid #080706}.cat:before{left:10px;transform:rotate(-15deg)}.cat:after{right:10px;transform:rotate(15deg)}.cat .tail{position:absolute;right:-36px;bottom:12px;width:65px;height:65px;border:10px solid #080706;border-left:0;border-top:0;border-radius:0 0 50px 0}.cat .eye{position:absolute;top:25px;width:6px;height:6px;border-radius:50%;background:#e9c86e}.cat .eye.left{left:26px}.cat .eye.right{right:26px}
+.section{padding:86px 7vw;max-width:1220px;margin:auto}.section-title{text-align:center;color:var(--darkgold);font-size:38px;margin:0 0 42px;letter-spacing:.06em}.section-title:before,.section-title:after{content:" ✦ ";font-size:20px;color:var(--gold)}
+.worries{background:linear-gradient(180deg,#fffaf0,#f6ecd9);border-bottom:1px solid rgba(177,132,61,.18)}.worry-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.worry{background:rgba(255,255,255,.7);border:1px solid rgba(177,132,61,.25);border-radius:999px;min-height:145px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 12px 30px rgba(100,70,20,.07)}.worry span{font-size:34px;color:var(--gold);margin-bottom:8px}.message-box{margin-top:34px;padding:34px;border-radius:26px;background:white;text-align:center;border:1px solid rgba(177,132,61,.22)}
+.profile{display:grid;grid-template-columns:330px 1fr 360px;gap:36px;align-items:center;background:rgba(255,255,255,.55);border:1px solid rgba(177,132,61,.2);border-radius:28px;padding:34px}.profile-photo{border-radius:28px;overflow:hidden;box-shadow:0 16px 45px rgba(90,60,20,.18)}.profile-photo img{width:100%;height:420px;object-fit:cover;filter:sepia(.14)}.profile h2{font-size:34px;margin:0 0 20px;color:var(--brown)}.profile h2 em{font-size:44px;color:var(--gold);font-style:italic}.profile-salon img{border-radius:20px;height:260px;width:100%;object-fit:cover}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.card{background:#fffdf8;border:1px solid rgba(177,132,61,.35);border-radius:20px;padding:30px 24px;box-shadow:0 10px 28px rgba(90,60,20,.08);min-height:220px}.card .icon{font-size:34px;color:var(--gold);margin-bottom:14px}.card h3{margin:0 0 12px;color:var(--brown)}.price{font-size:30px;color:var(--darkgold);font-weight:bold}
+.voice-faq{display:grid;grid-template-columns:1fr 1fr;gap:30px}.voice,.faq-item{background:white;border-radius:18px;padding:22px 26px;margin-bottom:16px;border:1px solid rgba(177,132,61,.2)}.voice:before{content:"“";font-size:44px;color:var(--gold);line-height:0}.voice small{display:block;text-align:right;color:var(--darkgold);font-weight:bold}
+.access-grid{display:grid;grid-template-columns:360px 1fr;gap:30px;align-items:stretch}.access-card{background:white;border-radius:22px;padding:30px;border:1px solid rgba(177,132,61,.22)}.map{width:100%;height:360px;border:0;border-radius:22px;box-shadow:0 12px 32px rgba(90,60,20,.14)}.map-btn{display:inline-block;margin-top:18px;padding:12px 24px;border-radius:999px;background:#3a2a1c;color:white;font-weight:bold}
+.contact{text-align:center;background:linear-gradient(180deg,#fffaf0,#f2e3c8);border-top:1px solid rgba(177,132,61,.2)}.contact-buttons{display:flex;justify-content:center;gap:18px;flex-wrap:wrap}.mail-btn,.instagram-btn{display:inline-flex;align-items:center;justify-content:center;padding:16px 34px;border-radius:999px;font-weight:bold;color:white}.mail-btn{background:linear-gradient(145deg,#d8af62,#9b6f28)}.instagram-btn{background:linear-gradient(145deg,#f58529,#dd2a7b,#8134af)}
+.footer{background:#2d2117;color:#f8ead2;text-align:center;padding:46px 20px}.fade{opacity:0;transform:translateY(24px);transition:1s}.fade.show{opacity:1;transform:none}
+@media(max-width:900px){.header{position:sticky}.logo{font-size:28px}.action-bar{position:static;justify-content:center;padding:8px;background:var(--cream)}.nav{justify-content:flex-start;overflow-x:auto;gap:18px;padding:10px 14px 14px}.hero{margin-top:0;min-height:78vh}.hero-content{padding:70px 24px}.hero-content .sub{font-size:20px}.hero h1{font-size:52px}.hero p{font-size:20px}.hero-btn{font-size:18px;padding:14px 28px}.moon-cat{width:120px;height:160px;right:4vw;top:12%;opacity:.65}.crescent{width:110px;height:110px;box-shadow:-25px 0 0 0 #d9b15b}.cat{transform:scale(.55);right:-5px;bottom:-22px}.section{padding:58px 20px}.section-title{font-size:30px}.worry-grid,.cards,.voice-faq,.access-grid,.profile{grid-template-columns:1fr}.profile{padding:20px}.profile-photo img{height:380px}.profile-salon img{height:230px}.card{min-height:auto}.map{height:310px}}
 </style>
 </head>
-
 <body>
-
-<div class="nav">
-  <span class="logo">☾ Chat Noir</span>
-  <a href="#top">ホーム</a>
-  <a href="#profile">プロフィール</a>
-  <a href="#menu">料金</a>
-  <a href="#voice">お客様の声</a>
-  <a href="#faq">FAQ</a>
-  <a href="#access">アクセス</a>
-  <a href="#contact">予約</a>
-</div>
-
-<div class="hero" id="top">
+<header class="header">
+  <div class="logo"><span class="mark">☾🐈</span>Chat Noir<small>Tarot Salon</small></div>
+  <div class="action-bar"><a href="mailto:diane.tarotmaster@gmail.com">✉ メールで予約</a><a href="https://www.instagram.com/chat_noir_diane/" target="_blank">Instagram</a></div>
+  <nav class="nav"><a href="#top">ホーム</a><a href="#profile">プロフィール</a><a href="#menu">メニュー・料金</a><a href="#voice">お客様の声</a><a href="#faq">よくある質問</a><a href="#access">アクセス</a><a href="#contact">ご予約</a></nav>
+</header>
+<section class="hero" id="top">
   <img src="salon.jpg" alt="占いサロン Chat Noir">
-  <div class="hero-text">
-    <h1>占いサロン Chat Noir</h1>
-    <p>心に寄り添い、未来への一歩を。</p>
-    <p>完全予約制・個室占いサロン</p>
-    <a class="btn btn-mail" href="mailto:diane.tarotmaster@gmail.com">ご予約はこちら</a>
-  </div>
-</div>
-
-<section>
-  <h2>サロン紹介</h2>
-  <p>大阪上本町駅から徒歩1分、地下鉄谷町九丁目駅から徒歩5分の好立地にある、完全予約制の個室占いサロンです。</p>
-  <p>恋愛、仕事、人生の選択、お子様の受験など、さまざまなお悩みに寄り添い、タロットと手相を通して前向きな一歩をサポートします。</p>
+  <div class="hero-content"><div class="sub">占いサロン</div><h1>Chat Noir</h1><p>心に寄り添い、未来への一歩を。</p><p>完全予約制・個室占いサロン</p><a class="hero-btn" href="mailto:diane.tarotmaster@gmail.com">✉ ご予約はこちら</a></div>
+  <div class="moon-cat" aria-hidden="true"><div class="crescent"></div><div class="cat"><span class="eye left"></span><span class="eye right"></span><span class="tail"></span></div></div>
 </section>
-
-<section id="profile">
-  <h2>プロフィール</h2>
-  <div class="card">
-    <h3>Tarotmaster Diane</h3>
-    <p>タロット占師として20年の実績。延べ3,000人以上を鑑定。手相占い師として5年の実績があります。</p>
-    <p>リピーター様、定期的にご来店されるお客様も多数。お一人おひとりのお気持ちに寄り添う鑑定を大切にしています。</p>
-  </div>
-</section>
-
-<section id="menu">
-  <h2>メニュー・料金</h2>
-
-  <div class="card">
-    <h3>開運インスピレーションタロット占い</h3>
-    <p class="price">1時間 10,000円（税込）</p>
-  </div>
-
-  <div class="card">
-    <h3>タロット占い＋開運手相占い</h3>
-    <p class="price">1.5時間 15,000円（税込）</p>
-  </div>
-
-  <div class="card">
-    <h3>延長</h3>
-    <p class="price">10分ごと 2,500円（税込）</p>
-  </div>
-</section>
-
-<section>
-  <h2>マンツーマンタロット占い講座</h2>
-  <div class="card">
-    <p>随時開催・ご予約受付中です。</p>
-  </div>
-</section>
-
-<section id="voice">
-  <h2>お客様の声</h2>
-
-  <div class="card">
-    <p>サロンができた時から毎月相談に伺っています。先生の鑑定アドバイスで自分の理想に近づいているのを実感しています。</p>
-    <p>K.H様</p>
-  </div>
-
-  <div class="card">
-    <p>お友達からの紹介で通っています。少し先のことを占ってもらえるので慌てずに済み、とても助かっています。</p>
-    <p>I.H様</p>
-  </div>
-
-  <div class="card">
-    <p>彼と一緒に相性占いで予約。後押ししていただき、その後結婚しました。</p>
-    <p>T.Y様</p>
-  </div>
-</section>
-
-<section id="faq">
-  <h2>よくある質問</h2>
-  <div class="card">
-    <h3>20分・30分鑑定できますか？</h3>
-    <p>個室占いサロンですので1時間から承っております。</p>
-
-    <h3>キャンセル料はかかりますか？</h3>
-    <p>現時点ではキャンセル料は頂戴しておりません。ご連絡だけお願いいたします。</p>
-
-    <h3>男性は鑑定できますか？</h3>
-    <p>はい。ただし何度かご来店いただいているお客様からのご紹介のみとさせていただいております。</p>
-  </div>
-</section>
-
-<section id="access">
-  <h2>アクセス</h2>
-  <p>〒543-0031<br>
-  大阪市天王寺区石ヶ辻町18-18<br>
-  ウェルネス上本町301</p>
-
-  <p>近鉄「大阪上本町駅」徒歩1分<br>
-  大阪メトロ「谷町九丁目駅」徒歩5分</p>
-
-  <iframe class="map"
-    src="https://www.google.com/maps?q=大阪市天王寺区石ヶ辻町18-18%20ウェルネス上本町&output=embed"
-    loading="lazy">
-  </iframe>
-</section>
-
-<section id="contact" style="text-align:center">
-  <h2>ご予約・お問い合わせ</h2>
-  <p>ご予約・お問い合わせはメールよりお願いいたします。</p>
-
-  <p>
-    <a class="btn btn-mail" href="mailto:diane.tarotmaster@gmail.com">
-      メールで予約する
-    </a>
-  </p>
-
-  <p style="margin-top:20px;">
-    <a class="btn btn-gray" href="#">
-      LINE予約は準備中
-    </a>
-  </p>
-
-  <p style="margin-top:10px;">
-    <a class="btn btn-gray" href="#">
-      Instagramは準備中
-    </a>
-  </p>
-</section>
-
-<footer>
-  <p>占いサロン Chat Noir</p>
-  <p>心に寄り添い、未来への一歩を。</p>
-</footer>
-
+<section class="section worries fade"><h2 class="section-title">このようなお悩みはありませんか？</h2><div class="worry-grid"><div class="worry"><span>♥</span>恋愛が<br>うまくいかない</div><div class="worry"><span>▣</span>転職や仕事の<br>方向に迷っている</div><div class="worry"><span>♟</span>家族や人間関係で<br>悩んでいる</div><div class="worry"><span>✦</span>将来が不安で<br>どう進めばいいか分からない</div></div><div class="message-box"><h3>そのお悩み、一緒に整理してみませんか。</h3><p>タロットと手相を通して、あなたの未来を明るく照らします。</p></div></section>
+<section class="section fade" id="profile"><div class="profile"><div class="profile-photo"><img src="プロフィール.jpg" alt="Tarotmaster Diane"></div><div><h2>Tarotmaster <em>Diane</em></h2><p>タロット占師として20年の実績。延べ3,000人以上を鑑定。手相占い師として5年の実績があります。</p><p>リピーター様、定期的にご来店されるお客様も多数。お一人おひとりのお気持ちに寄り添う鑑定を大切にしています。</p><p>恋愛、仕事、人生の選択、お子様の受験など、さまざまなお悩みに対応しています。</p></div><div class="profile-salon"><img src="salon.jpg" alt="サロン内観"></div></div></section>
+<section class="section fade" id="menu"><h2 class="section-title">メニュー・料金</h2><div class="cards"><div class="card"><div class="icon">☾</div><h3>開運インスピレーション<br>タロット占い</h3><p>1時間</p><p class="price">10,000円</p><p>税込</p></div><div class="card"><div class="icon">✋</div><h3>タロット占い<br>＋ 開運手相占い</h3><p>1.5時間</p><p class="price">15,000円</p><p>税込</p></div><div class="card"><div class="icon">✦</div><h3>延長</h3><p>10分ごと</p><p class="price">2,500円</p><p>税込</p></div><div class="card"><div class="icon">📖</div><h3>マンツーマン<br>タロット占い講座</h3><p>随時開催</p><p>ご予約受付中</p></div></div></section>
+<section class="section fade"><div class="voice-faq"><div id="voice"><h2 class="section-title">お客様の声</h2><div class="voice"><p>サロンができた時から毎月相談に伺っています。先生の鑑定アドバイスで自分の理想に近づいているのを実感しています。</p><small>K.H様</small></div><div class="voice"><p>お友達からの紹介で通っています。少し先のことを占ってもらえるので慌てずに済み、とても助かっています。</p><small>I.H様</small></div><div class="voice"><p>彼と一緒に相性占いで予約。後押ししていただき、その後結婚しました。</p><small>T.Y様</small></div></div><div id="faq"><h2 class="section-title">よくある質問</h2><div class="faq-item"><strong>20分・30分鑑定できますか？</strong><p>個室占いサロンですので1時間から承っております。</p></div><div class="faq-item"><strong>キャンセル料はかかりますか？</strong><p>現時点ではキャンセル料は頂戴しておりません。ご連絡だけお願いいたします。</p></div><div class="faq-item"><strong>男性は鑑定できますか？</strong><p>はい。ただし何度かご来店いただいているお客様からのご紹介のみとさせていただいております。</p></div></div></div></section>
+<section class="section fade" id="access"><h2 class="section-title">アクセス</h2><div class="access-grid"><div class="access-card"><p>〒543-0031<br>大阪市天王寺区石ヶ辻町18-18<br>ウェルネス上本町301</p><p>近鉄「大阪上本町駅」徒歩1分<br>大阪メトロ「谷町九丁目駅」徒歩5分</p><a class="map-btn" href="https://www.google.com/maps/place/%E3%80%92543-0031+%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E5%A4%A9%E7%8E%8B%E5%AF%BA%E5%8C%BA%E7%9F%B3%E3%82%B1%E8%BE%BB%E7%94%BA%EF%BC%91%EF%BC%98+%E3%82%A6%E3%82%A8%E3%83%AB%E3%83%8D%E3%82%B9%E4%B8%8A%E6%9C%AC%E7%94%BA/" target="_blank">Googleマップで開く</a></div><iframe class="map" src="https://www.google.com/maps?q=大阪市天王寺区石ヶ辻町18-18%20ウェルネス上本町&output=embed" loading="lazy"></iframe></div></section>
+<section class="section contact fade" id="contact"><h2 class="section-title">ご予約・お問い合わせ</h2><p>完全予約制となっております。ご予約・お問い合わせはメールまたはInstagramよりお願いいたします。</p><div class="contact-buttons"><a class="mail-btn" href="mailto:diane.tarotmaster@gmail.com">✉ メールで予約</a><a class="instagram-btn" href="https://www.instagram.com/chat_noir_diane/" target="_blank">Instagram @chat_noir_diane</a></div></section>
+<footer class="footer"><p>☾ Chat Noir Tarot Salon</p><p>心に寄り添い、未来への一歩を。</p></footer>
+<script>
+const fades=document.querySelectorAll('.fade');
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('show');}});},{threshold:.18});
+fades.forEach(el=>observer.observe(el));
+</script>
 </body>
 </html>
