@@ -154,11 +154,17 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
     radial-gradient(circle at 75% 25%,rgba(255,220,120,.18),transparent 28%),
     linear-gradient(to right,rgba(30,20,10,.55),rgba(0,0,0,.15));
 }
-  .hero-btn{
-    background:linear-gradient(145deg,#d7aa58,#b8862d);
-    box-shadow:
-    0 10px 30px rgba(0,0,0,.25),
-    inset 0 1px rgba(255,255,255,.5);
+  .hero-btn,
+.mail-btn,
+.instagram-btn{
+    transition:.3s;
+}
+
+.hero-btn:hover,
+.mail-btn:hover,
+.instagram-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 28px rgba(0,0,0,.18);
 }
   .fade{
     opacity:0;
@@ -177,6 +183,9 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
 }
 .hero-content{
   z-index:6;
+}
+.nav a:hover{
+    color:#d8af62;
 }
 </style>
 </head>
