@@ -306,6 +306,23 @@ transform:scale(1.35);
     font-weight:bold;
     margin-top:16px;
 }
+.section-title{
+    position:relative;
+    display:inline-block;
+    padding-bottom:18px;
+    margin-bottom:48px;
+}
+.section-title::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    width:90px;
+    height:2px;
+    background:linear-gradient(to right,#c69c43,#f2d98a,#c69c43);
+    border-radius:10px;
+}
 </style>
 </head>
 <body>
