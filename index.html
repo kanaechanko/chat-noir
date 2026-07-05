@@ -187,6 +187,63 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
 .nav a:hover{
     color:#d8af62;
 }
+.hero-stars{
+    position:absolute;
+    right:220px;
+    top:120px;
+    width:220px;
+    height:220px;
+    pointer-events:none;
+    z-index:4;
+}
+.star{
+    position:absolute;
+    color:#f2cc75;
+    text-shadow:0 0 12px rgba(255,215,120,.7);
+    animation:twinkle 3s infinite ease-in-out;
+}
+.s1{
+    top:0;
+    left:100px;
+    font-size:18px;
+    animation-delay:0s;
+}
+.s2{
+    top:40px;
+    left:170px;
+    font-size:12px;
+    animation-delay:.7s;
+}
+.s3{
+    top:90px;
+    left:30px;
+    font-size:16px;
+    animation-delay:1.4s;
+}
+.s4{
+    top:150px;
+    left:150px;
+    font-size:22px;
+    animation-delay:2.1s;
+}
+.s5{
+    top:180px;
+    left:70px;
+    font-size:14px;
+    animation-delay:2.8s;
+}
+@keyframes twinkle{
+
+0%,100%{
+opacity:.2;
+transform:scale(.8);
+}
+
+50%{
+opacity:1;
+transform:scale(1.35);
+}
+}
 </style>
 </head>
 <body>
@@ -203,6 +260,13 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
   <img src="salon.jpg" alt="占いサロン Chat Noir">
   <div class="hero-content"><div class="sub">占いサロン</div><h1>Chat Noir</h1><p>心に寄り添い、未来への一歩を。</p><p>完全予約制・個室占いサロン</p><a class="hero-btn" href="mailto:diane.tarotmaster@gmail.com">✉ ご予約はこちら</a></div>
   <div class="hero-art"><img src="hero-cat.png" alt=""></div>
+  <div class="hero-stars">
+    <span class="star s1">✦</span>
+    <span class="star s2">✦</span>
+    <span class="star s3">✦</span>
+    <span class="star s4">✦</span>
+    <span class="star s5">✦</span>
+</div>
 </section>
 <section class="section worries fade"><h2 class="section-title">このようなお悩みはありませんか？</h2><div class="worry-grid"><div class="worry"><span>♥</span>恋愛が<br>うまくいかない</div><div class="worry"><span>▣</span>転職や仕事の<br>方向に迷っている</div><div class="worry"><span>♟</span>家族や人間関係で<br>悩んでいる</div><div class="worry"><span>✦</span>将来が不安で<br>どう進めばいいか分からない</div></div><div class="message-box"><h3>そのお悩み、一緒に整理してみませんか。</h3><p>タロットと手相を通して、あなたの未来を明るく照らします。</p></div></section>
 <section class="section fade" id="profile"><div class="profile"><div class="profile-photo"><img src="profile.jpg" alt="Tarotmaster Diane"></div><div><h2>Tarotmaster <em>Diane</em></h2><p>タロット占師として20年の実績。延べ3,000人以上を鑑定。手相占い師として5年の実績があります。</p><p>リピーター様、定期的にご来店されるお客様も多数。お一人おひとりのお気持ちに寄り添う鑑定を大切にしています。</p><p>恋愛、仕事、人生の選択、お子様の受験など、さまざまなお悩みに対応しています。</p></div><div class="profile-salon"><img src="42C4DFB2-8B6B-42D1-9AC3-7707E6F0581E.jpg" alt="サロン内観"></div></div></section>
