@@ -340,6 +340,29 @@ transform:scale(1.35);
     color:#d5c7ad;
     font-size:15px;
 }
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(circle at 75% 25%,
+        rgba(255,220,120,.18),
+        transparent 28%);
+    z-index:1;
+    animation:goldGlow 18s ease-in-out infinite;
+    pointer-events:none;
+}
+@keyframes goldGlow{
+
+0%,100%{
+    opacity:.45;
+    transform:translateX(0) translateY(0);
+}
+50%{
+    opacity:.9;
+    transform:translateX(-40px) translateY(20px);
+}
+}
 </style>
 </head>
 <body>
