@@ -28,11 +28,36 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
 .contact{text-align:center;background:linear-gradient(180deg,#fffaf0,#f2e3c8);border-top:1px solid rgba(177,132,61,.2)}.contact-buttons{display:flex;justify-content:center;gap:18px;flex-wrap:wrap}.mail-btn,.instagram-btn{display:inline-flex;align-items:center;justify-content:center;padding:16px 34px;border-radius:999px;font-weight:bold;color:white}.mail-btn{background:linear-gradient(145deg,#d8af62,#9b6f28)}.instagram-btn{background:linear-gradient(145deg,#f58529,#dd2a7b,#8134af)}
 .footer{background:#2d2117;color:#f8ead2;text-align:center;padding:46px 20px}.fade{opacity:0;transform:translateY(24px);transition:1s}.fade.show{opacity:1;transform:none}
 @media(max-width:900px){.header{position:sticky}.logo{font-size:28px}.action-bar{position:static;justify-content:center;padding:8px;background:var(--cream)}.nav{justify-content:flex-start;overflow-x:auto;gap:18px;padding:10px 14px 14px}.hero{margin-top:0;min-height:78vh}.hero-content{padding:70px 24px}.hero-content .sub{font-size:20px}.hero h1{font-size:52px}.hero p{font-size:20px}.hero-btn{font-size:18px;padding:14px 28px}.moon-cat{width:120px;height:160px;right:4vw;top:12%;opacity:.65}.crescent{width:110px;height:110px;box-shadow:-25px 0 0 0 #d9b15b}.cat{transform:scale(.55);right:-5px;bottom:-22px}.section{padding:58px 20px}.section-title{font-size:30px}.worry-grid,.cards,.voice-faq,.access-grid,.profile{grid-template-columns:1fr}.profile{padding:20px}.profile-photo img{height:380px}.profile-salon img{height:230px}.card{min-height:auto}.map{height:310px}}
+.logo{
+  text-align:left;
+  padding:8px 20px;
+}
+.logo-link{
+  display:inline-block;
+}
+.logo-image{
+  width:260px;
+  max-width:80vw;
+  height:auto;
+}
+@media(max-width:700px){
+  .logo{
+    text-align:center;
+    padding:8px 10px;
+  }
+  .logo-image{
+    width:220px;
+  }
+}
 </style>
 </head>
 <body>
 <header class="header">
-  <div class="logo"><span class="mark">☾🐈</span>Chat Noir<small>Tarot Salon</small></div>
+  <div class="logo">
+  <a href="#top" class="logo-link">
+    <img src="logo.png" alt="Chat Noir Tarot Salon" class="logo-image">
+  </a>
+　</div>
   <div class="action-bar"><a href="mailto:diane.tarotmaster@gmail.com">✉ メールで予約</a><a href="https://www.instagram.com/chat_noir_diane/" target="_blank">Instagram</a></div>
   <nav class="nav"><a href="#top">ホーム</a><a href="#profile">プロフィール</a><a href="#menu">メニュー・料金</a><a href="#voice">お客様の声</a><a href="#faq">よくある質問</a><a href="#access">アクセス</a><a href="#contact">ご予約</a></nav>
 </header>
