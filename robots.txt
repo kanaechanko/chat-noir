@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chatnoirtarot.github.io/chat-noir/sitemap.xml
